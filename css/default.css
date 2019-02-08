@@ -1,0 +1,29 @@
+body {
+    background-color: #e7728c;
+}
+
+
+.cindy-canvas-wrapper {
+
+}
+
+.cindy-canvas {
+    margin: 0 auto;
+}
+
+#inp {
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #89241c;
+    border-bottom: 1px solid #89241c;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#inp:focus {
+    outline: none;
+    border-color: #ffffff;
+}
