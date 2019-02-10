@@ -3,13 +3,12 @@
 A toy website for Valentine's Day that features the
 [heart shaped algebraic surface](http://mathworld.wolfram.com/HeartSurface.html) (Taubin 1993, 1994).
 
-Adapted from the ["Raycasting Implicit Surfaces" CindyJS showcase code](https://cindyjs.org/gallery/main/Raytracer/)
-by Jürgen Richter-Gebert.
+Adapted from the ["Raycasting Implicit Surfaces" CindyJS showcase code](https://cindyjs.org/gallery/main/Raytracer/).
 
 ## Credits
 
-Raytracer code by by Jürgen Richter-Gebert.
-Adaptations by [Eric Londaits](mailto:eric.londaits@imaginary.org) for IMAGINARY gGmbH.
+Raytracer by Aaron Montag. CindyJS by Jürgen Richter-Gebert.
+Website and adaptations by [Eric Londaits](mailto:eric.londaits@imaginary.org) for IMAGINARY gGmbH.
 
 ## License
 
@@ -26,4 +25,8 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+---
+
+Icons by [Font Awesome](https://fontawesome.com/) licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 

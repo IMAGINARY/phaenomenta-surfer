@@ -1,0 +1,27 @@
+.modal-content {
+  box-shadow: 0 0 30px -6px rgba(0, 0, 0, 1);
+  border: none;
+  border-radius: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.2;
+}
+
+.modal-body {
+  padding: 2rem 5rem;
+  @include ubuntu;
+  b, strong {
+    @include ubuntuBold;
+  }
+
+  button.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding: 2rem 1rem;
+  }
+}

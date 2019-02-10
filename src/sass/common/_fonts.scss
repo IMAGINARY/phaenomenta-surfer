@@ -1,0 +1,15 @@
+$font-stack-ubuntu: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans-serif;
+
+@mixin ubuntu {
+  font-family: $font-stack-ubuntu;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+@mixin ubuntuBold {
+  font-family: $font-stack-ubuntu;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: normal;
+}

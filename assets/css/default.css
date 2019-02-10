@@ -12,4 +12,57 @@ html, body {
   width: 100%;
   height: 100%; }
 
+.logo-imaginary {
+  display: block;
+  width: 200px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  background-image: url("../img/imaginary-logo-white.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.icon-info {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+  background-image: url("../img/info-circle-solid.svg");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+.modal-content {
+  box-shadow: 0 0 30px -6px black;
+  border: none;
+  border-radius: 0; }
+
+.modal-backdrop.show {
+  opacity: 0.2; }
+
+.modal-body {
+  padding: 2rem 5rem;
+  font-family: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal; }
+  .modal-body b, .modal-body strong {
+    font-family: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: normal; }
+  .modal-body button.close {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+  @media (max-width: 991.98px) {
+    .modal-body {
+      padding: 2rem 1rem; } }
+
 /*# sourceMappingURL=default.css.map */
