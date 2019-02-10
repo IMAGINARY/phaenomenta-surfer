@@ -1,0 +1,19 @@
+{
+  "name": "valentinesday-suss",
+  "version": "1.0.0",
+  "description": "Mini site for Valentine's Day 2019",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eric Londaits <eric.londaits@imaginary.org>",
+  "private": false,
+  "license": "Apache-2.0"
+}

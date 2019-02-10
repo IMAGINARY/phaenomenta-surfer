@@ -1,0 +1,49 @@
+.input-field-wrapper {
+  text-align: center;
+  margin: 0 0 3em;
+}
+
+#input-field {
+  margin: 0 auto;
+  color: $color-red-dark;
+  border-color: $color-red-dark;
+  border: 1px dashed;
+  padding: 0.3em;
+  font-size: 24px;
+
+  &.mq-focused {
+    box-shadow: none;
+    border-color: white;
+  }
+}
+
+#inp {
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  font-size: 24px;
+  color: $color-red-dark;
+  border-bottom: 1px solid $color-red-dark;
+  padding-bottom: 5px;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+    border-color: #ffffff;
+  }
+}
+
+#redraw-button {
+  display: inline-block;
+  line-height: 2.3em;
+  font-size: 20px;
+  margin: 0;
+  vertical-align: middle;
+  margin-left: 0.3em;
+  font-family: "Times New Roman", "New York", serif;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid $color-red-dark;
+  color: $color-red-dark;
+  padding: 0 0.8em;
+}
