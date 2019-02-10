@@ -6,7 +6,8 @@ html, body {
   margin: 0; }
 
 .cindy-canvas {
-  margin: 0 auto; }
+  margin: 0 auto;
+  cursor: pointer; }
 
 .input-field-wrapper {
   text-align: center;
