@@ -9,4 +9,7 @@ html, body {
   display: block;
   width: 100%;
   height: 100%;
+  @include media-breakpoint-between(xs, md) {
+    padding-top: 100px;
+  }
 }
