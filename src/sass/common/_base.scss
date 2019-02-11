@@ -1,3 +1,13 @@
 body {
   background-color: $color-pink;
 }
+
+.boxed {
+  background-color: $color-pink-light;
+  padding: 0.5em;
+  margin: 0.5em 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

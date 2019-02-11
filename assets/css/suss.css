@@ -1,6 +1,13 @@
 body {
   background-color: #e7728c; }
 
+.boxed {
+  background-color: #ffdbeb;
+  padding: 0.5em;
+  margin: 0.5em 0; }
+  .boxed p:last-child {
+    margin-bottom: 0; }
+
 html, body {
   padding: 0;
   margin: 0; }

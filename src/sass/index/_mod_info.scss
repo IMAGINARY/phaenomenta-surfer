@@ -1,16 +1,36 @@
 .logo-imaginary {
+   display: block;
+   width: 200px;
+   height: 24px;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   z-index: 100;
+   background-image: url('../img/imaginary-logo-white.png');
+   background-size: contain;
+   background-position: center center;
+   background-repeat: no-repeat;
+ }
+
+.credits-home {
   display: block;
   width: 200px;
-  height: 24px;
+  height: auto;
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 20px;
   z-index: 100;
-  background-image: url('../img/imaginary-logo-white.png');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+  font-size: 13px;
+  color: #ffffff;
+  opacity: 0.7;
+  @include ubuntu;
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 1;
+  }
 }
+
 
 .icon-info {
   display: block;
@@ -24,4 +44,11 @@
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.info-formula {
+  display: inline-block;
+  padding: 0.1em 0.3em;
+  background-color: $color-gray;
+  font-size: 13px;
 }
