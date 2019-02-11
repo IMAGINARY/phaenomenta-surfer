@@ -13,15 +13,19 @@
   </head>
 <body>
   <script id="csmousedown" type="text/x-cindyscript">
+  playanimation();
+  framesdelay=0;
   sx = mouse().x;
   sy = mouse().y;
   dragging = sx < .5;
   </script>
   <script id="csmouseup" type="text/x-cindyscript">
   dragging = false;
+  framesdelay=1;
   </script>
 
   <script id="csinit" type="text/x-cindyscript">
+  framesdelay=0;
   speciala = .1;
   smootha(x) := if(x<speciala,
     (-1/(speciala+.01))*(x-speciala)^2+speciala,
@@ -224,6 +228,9 @@
   </script>
 
   <script id="csdraw" type="text/x-cindyscript">
+
+  if (framesdelay > 0, framesdelay = framesdelay + 1);
+  if (framesdelay > 60, pauseanimation(); framesdelay=0);
   //the following is executed for every rendered frame
   if (dragging,
       dx = 3 * (sx - mouse().x); dy = 3 * (sy - mouse().y);,
@@ -366,7 +373,7 @@
     spoly = B3 * spolyvalues;                         //interpolate to monomial basis
     D = (spoly_2 * spoly_2) - 4. * spoly_3 * spoly_1; //discriminant of spoly
 
-    color = (231/255,114/255,140/255); //the color, which will be returned
+    color = (0.9058823529,0.4470588235,0.5490196078); //the color, which will be returned
     if (D >= 0, //ray intersects ball
       color = computeColor(
         #,
@@ -397,7 +404,7 @@
   <script type="text/javascript">
     var cdy = CindyJS({canvasname:"CSCanvas",
       scripts: "cs*",
-      animation: {autoplay: true},
+      animation: {autoplay: false},
       use : ["CindyGL", "symbolic"],
       geometry: [ { name:"PA", kind:"P", type:"Free", pos: [.5,-.28,1], narrow: true, color: [1,1,1], size:8 },
         { name:"PB", kind:"P", type:"Free", pos: [.5,0,1], narrow: true, color: [1,1,1], size:8 },
