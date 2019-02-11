@@ -125,9 +125,13 @@ html, body {
 }
 
 .embeded {
+  .logo-imaginary, .credits-home, .icon-info {
+    display: none;
+  }
+
   .viz-wrapper {
     height: 0;
-    padding-top: 1em;
+    padding-top: 0em;
     padding-bottom: 72%;
     margin-top: 0em;
   }
@@ -135,7 +139,7 @@ html, body {
   .cindy-viewer {
     height: 0;
     padding-bottom: 72%;
-    margin-top: 1em;
+    margin-top: 0em;
   }
 
   .input-wrapper {

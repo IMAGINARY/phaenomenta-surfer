@@ -162,16 +162,19 @@ html, body {
   #redraw-button:hover {
     background-color: #cf005d; }
 
+.embeded .logo-imaginary, .embeded .credits-home, .embeded .icon-info {
+  display: none; }
+
 .embeded .viz-wrapper {
   height: 0;
-  padding-top: 1em;
+  padding-top: 0em;
   padding-bottom: 72%;
   margin-top: 0em; }
 
 .embeded .cindy-viewer {
   height: 0;
   padding-bottom: 72%;
-  margin-top: 1em; }
+  margin-top: 0em; }
 
 .embeded .input-wrapper {
   position: absolute;
