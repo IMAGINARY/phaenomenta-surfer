@@ -25,7 +25,7 @@
   </script>
 
   <script id="csinit" type="text/x-cindyscript">
-  framesdelay=0;
+  framesdelay=1;
   speciala = .1;
   smootha(x) := if(x<speciala,
     (-1/(speciala+.01))*(x-speciala)^2+speciala,
@@ -404,7 +404,7 @@
   <script type="text/javascript">
     var cdy = CindyJS({canvasname:"CSCanvas",
       scripts: "cs*",
-      animation: {autoplay: false},
+      animation: {autoplay: true},
       use : ["CindyGL", "symbolic"],
       geometry: [ { name:"PA", kind:"P", type:"Free", pos: [.5,-.28,1], narrow: true, color: [1,1,1], size:8 },
         { name:"PB", kind:"P", type:"Free", pos: [.5,0,1], narrow: true, color: [1,1,1], size:8 },
