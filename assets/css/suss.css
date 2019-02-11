@@ -21,28 +21,21 @@ html, body {
   margin: 0 0 3em; }
 
 #input-field {
-  margin: 0 auto;
-  color: #89241c;
-  border-color: #89241c;
-  border: 1px dashed;
-  padding: 0.3em;
-  font-size: 24px; }
-  #input-field.mq-focused {
-    box-shadow: none;
-    border-color: white; }
-
-#inp {
-  display: block;
+  display: inline-block;
+  width: 638px;
   background-color: transparent;
-  border: none;
   margin: 0 auto;
-  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
   color: #89241c;
-  border-bottom: 1px solid #89241c;
-  padding-bottom: 5px;
+  border: 1px dashed #89241c;
+  padding: 14px 5px;
   text-align: center; }
-  #inp:focus {
+  #input-field:focus {
     outline: none;
+    border-color: #ffffff; }
+  #input-field:hover {
     border-color: #ffffff; }
 
 #redraw-button {

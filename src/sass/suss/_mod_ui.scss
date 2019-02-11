@@ -4,32 +4,24 @@
 }
 
 #input-field {
-  margin: 0 auto;
-  color: $color-red-dark;
-  border-color: $color-red-dark;
-  border: 1px dashed;
-  padding: 0.3em;
-  font-size: 24px;
-
-  &.mq-focused {
-    box-shadow: none;
-    border-color: white;
-  }
-}
-
-#inp {
-  display: block;
+  display: inline-block;
+  width: 638px;
   background-color: transparent;
-  border: none;
   margin: 0 auto;
-  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
   color: $color-red-dark;
-  border-bottom: 1px solid $color-red-dark;
-  padding-bottom: 5px;
+  border: 1px dashed $color-red-dark;
+  padding: 14px 5px;
   text-align: center;
 
   &:focus {
     outline: none;
+    border-color: #ffffff;
+  }
+
+  &:hover {
     border-color: #ffffff;
   }
 }
