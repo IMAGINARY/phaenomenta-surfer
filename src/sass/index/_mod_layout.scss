@@ -21,6 +21,8 @@ html, body {
   display: block;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
   @include media-breakpoint-between(xs, md) {
     height: 0;
     padding-bottom: 72%;
@@ -28,6 +30,26 @@ html, body {
   }
 }
 
+.loader {
+  position: absolute;
+  top: 7em;
+  width: 100%;
+  height: 64px;
+  z-index: 1000;
+  text-align: center;
+  .lds-heart {
+    display: inline-block;
+  }
+}
+
+.widget-loaded {
+  .cindy-viewer {
+    opacity: 1;
+  }
+  .loader {
+    display: none;
+  }
+}
 
 .input-wrapper {
   position: absolute;
