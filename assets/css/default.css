@@ -162,6 +162,34 @@ html, body {
   #redraw-button:hover {
     background-color: #cf005d; }
 
+.embeded .viz-wrapper {
+  height: 0;
+  padding-top: 1em;
+  padding-bottom: 72%;
+  margin-top: 0em; }
+
+.embeded .cindy-viewer {
+  height: 0;
+  padding-bottom: 72%;
+  margin-top: 1em; }
+
+.embeded .input-wrapper {
+  position: absolute;
+  padding: 0; }
+
+.embeded #input-field {
+  width: 470px;
+  margin-bottom: 0;
+  font-size: 18px; }
+
+.embeded #redraw-button {
+  font-size: 18px;
+  padding: 3px 8px; }
+
+.embeded .modal-dialog {
+  max-width: 560px;
+  margin: 1.25rem auto; }
+
 .logo-imaginary {
   display: block;
   width: 200px;
