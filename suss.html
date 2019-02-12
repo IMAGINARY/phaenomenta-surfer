@@ -158,8 +158,8 @@
     normal = normal / |normal|;
     
     //adjust normals: hide rendering artefacts
-    //dr = ray(pixel,1)-ray(pixel,0);
-    //if(normal*dr>0, normal=-normal);
+    dr = ray(pixel,1)-ray(pixel,0);
+    if(normal*dr>0, normal=-normal);
     
 
     forall(1..length(lightdirs),
