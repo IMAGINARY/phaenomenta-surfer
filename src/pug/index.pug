@@ -19,7 +19,7 @@ html(lang="en")
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     script(src="vendor/viewer/cindy-viewer.js")
-    script(src="assets/js/default.js")
+    script(src="assets/js/default.js?v=1")
   body
     a.logo-imaginary(href="http://10years.imaginary.org", title="About IMAGINARY")
     a.credits-home(href='https://cindyjs.org/gallery/main/Raytracer/')
@@ -30,7 +30,7 @@ html(lang="en")
       .loader
         .lds-heart
           .lds-heart-inner
-      .cindy-viewer(data-cindy-src="suss.html", data-cindy-appwidth="700", data-cindy-appheight="500")
+      .cindy-viewer(data-cindy-src="suss.html?v=1", data-cindy-appwidth="700", data-cindy-appheight="500")
     .input-wrapper
       input#input-field(type="text", value="(x^2+((1+b)*y)^2+z^2-1)^3-x^2*z^3-a*y^2*z^3")
       button#redraw-button(type="submit") Redraw
