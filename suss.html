@@ -162,11 +162,13 @@
     if(normal*dr>0, normal=-normal);
     
 
+    colorHit = (0., 0., 0.);
     forall(1..length(lightdirs),
       //illuminate if the normal and lightdir point in the same direction
       illumination = max(0, (lightdirs_# / abs(lightdirs_#)) * normal);
-      color = color + alpha * (illumination ^ gamma_#) * colors_#;
+      colorHit = colorHit + alpha * (illumination ^ gamma_#) * colors_#;
     );
+    color = color + (colorHit_1, colorHit_3, colorHit_3, alpha);
     color
   );
 
@@ -298,6 +300,7 @@
 
 
   //what color should be given to pixel with pixel-coordinate pixel (vec2)
+  // color is a float[4] representing RGBA with premultiplied alpha
     computeColor(pixel, l, u, color) := (
       regional(a, b);
       //traverse binary tree (DFS) using heap-indices
@@ -341,7 +344,7 @@
     spoly = B3 * spolyvalues;                         //interpolate to monomial basis
     D = (spoly_2 * spoly_2) - 4. * spoly_3 * spoly_1; //discriminant of spoly
 
-    color = (0.9058823529,0.4470588235,0.5490196078); //the color, which will be returned
+    color = (0.0, 0.0, 0.0, 0.0); // background color: fully transparent
     if (D >= 0, //ray intersects ball
       color = computeColor(
         #,
@@ -350,7 +353,7 @@
         color
       );
     );
-    color //return value
+    color //return value: WebGL uses premultiplied alpha by default for RGBA which is already our internal representation!!!
   ); //render the scene. # is the pixel coordinate
 
   //lines for the sliders
