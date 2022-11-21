@@ -1,10 +1,9 @@
 {
-  "name": "valentinesday-suss",
-  "version": "1.0.0",
-  "description": "Mini site for Valentine's Day 2019",
+  "name": "phaenomenta-surfer",
+  "version": "0.0.0",
+  "description": "Surfer mini website for Phänementa, Lüdenscheid",
   "main": "gulpfile.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-pug": "^1.1.0",
@@ -17,6 +16,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Eric Londaits <eric.londaits@imaginary.org>",
+  "contributors": [
+    "Aaron Montag <aaron.montag@imaginary.org>",
+    "Christian Stussak <christian.stussak@imaginary.org>"
+  ],
   "private": false,
   "license": "Apache-2.0"
 }
