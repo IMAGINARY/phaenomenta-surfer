@@ -1,8 +1,8 @@
 body {
-  background-color: #e7728c; }
+  background-color: #ffffff; }
 
 .boxed {
-  background-color: #ffdbeb;
+  background-color: #ffffff;
   padding: 0.5em;
   margin: 0.5em 0; }
   .boxed p:last-child {
@@ -120,8 +120,8 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
-  color: #89241c;
-  border: 2px dashed #ffdbeb;
+  color: #e7304d;
+  border: 2px dashed #ffdbe1;
   padding: 10px 5px;
   text-align: center; }
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -134,9 +134,11 @@ html, body {
       font-size: 20px; } }
   #input-field:focus {
     outline: none;
-    border-color: #ffffff; }
+    color: #e31a3a;
+    border-color: #e7304d; }
   #input-field:hover {
-    border-color: #ffffff; }
+    color: #e31a3a;
+    border-color: #e7304d; }
 
 #redraw-button {
   cursor: pointer;
@@ -150,17 +152,17 @@ html, body {
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
-  background-color: #e80068;
-  border: 2px solid #ffdbeb;
-  color: #ffffff;
+  background-color: #ffdbe1;
+  border: 2px solid #e7304d;
+  color: #cc1834;
   padding: 5px 15px; }
   #redraw-button:focus {
     outline: none;
     box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5);
-    background-color: #cf005d;
-    border: 2px solid #ffc2dd; }
+    background-color: #ffc2cc;
+    border: 2px solid #e31a3a; }
   #redraw-button:hover {
-    background-color: #cf005d; }
+    background-color: #ffc2cc; }
 
 .embeded .logo-imaginary, .embeded .credits-home {
   display: none; }
@@ -197,7 +199,7 @@ html, body {
   top: 20px;
   left: 20px;
   z-index: 100;
-  background-image: url("../img/imaginary-logo-white.png");
+  background-image: url("../img/imaginary-logo-gray.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat; }
@@ -211,14 +213,14 @@ html, body {
   left: 20px;
   z-index: 100;
   font-size: 13px;
-  color: #ffffff;
+  color: #646363;
   opacity: 0.7;
   font-family: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal; }
   .credits-home:hover {
-    color: #ffffff;
+    color: #646363;
     text-decoration: none;
     opacity: 1; }
 

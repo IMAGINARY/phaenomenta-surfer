@@ -6,11 +6,11 @@
    top: 20px;
    left: 20px;
    z-index: 100;
-   background-image: url('../img/imaginary-logo-white.png');
+   background-image: url('../img/imaginary-logo-gray.png');
    background-size: contain;
    background-position: center center;
    background-repeat: no-repeat;
- }
+}
 
 .credits-home {
   display: block;
@@ -21,11 +21,11 @@
   left: 20px;
   z-index: 100;
   font-size: 13px;
-  color: #ffffff;
+  color: $color-phaenomenta-gray;
   opacity: 0.7;
   @include ubuntu;
   &:hover {
-    color: #ffffff;
+    color: $color-phaenomenta-gray;
     text-decoration: none;
     opacity: 1;
   }
