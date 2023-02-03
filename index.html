@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+
+  <body style="font-family: Arial">
+    <iframe
+      id="imaginary-surfer-renderer"
+      src="http://localhost:1234/index.html"
+      name="imaginary-surfer"
+      width="100%"
+      height="512"
+      style="border: 0; overflow: hidden"
+    ></iframe>
+    <div style="display: flex; gap: 0.5rem">
+      <input
+        id="imaginary-surfer-formula"
+        type="text"
+        value="(x^2+y^2+z^2-(0.5+a)^2)^2-(3*((0.5+a)^2)-1)/(3-((0.5+a)^2))*(1-z-sqrt(2)*x)*(1-z+sqrt(2)*x)*(1+z+sqrt(2)*y)*(1+z-sqrt(2)*y)"
+        style="flex-grow: 10"
+      />
+      <button id="imaginary-surfer-formula-submit" type="submit">Los!</button>
+    </div>
+    <script>
+      const frame = document.getElementById("imaginary-surfer-renderer");
+      const win = frame.contentWindow;
+      const input = document.getElementById("imaginary-surfer-formula");
+      const button = document.getElementById("imaginary-surfer-formula-submit");
+      const submit = () => win.postMessage(input.value, frame.src);
+      const submitByKey = (e) => (e.code === "Enter" ? submit() : undefined);
+      button.addEventListener("click", submit);
+      input.addEventListener("keydown", submitByKey);
+    </script>
+  </body>
+</html>

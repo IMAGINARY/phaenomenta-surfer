@@ -1,0 +1,83 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  position: relative;
+  margin: 0px;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+@media (orientation: landscape) {
+  #surfer-container-width-sliders {
+    position: relative;
+    height: 100%;
+    display: grid;
+    gap: 40px;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 256px;
+    justify-content: center;
+    box-sizing: content-box;
+  }
+
+  #surfer-container {
+    display: inline;
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    place-self: end;
+  }
+
+  .surface {
+    /*  display: inline-block;*/
+  }
+
+  #sliders {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #formula-wrapper {
+    grid-row: 2;
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 10;
+    gap: 10px;
+  }
+}
+
+#formula {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  flex-grow: 10;
+  resize: none;
+  font-size: larger;
+  border: none;
+  border-radius: 1ex;
+  padding: 1.5ex;
+  background-color: rgba(211, 211, 211);
+}
+
+#go {
+  width: 100%;
+  padding: 1.5ex;
+  border: none;
+  border-radius: 1ex;
+  background-color: rgba(211, 211, 211);
+}
+
+#go span {
+  font-size: 2rem;
+}

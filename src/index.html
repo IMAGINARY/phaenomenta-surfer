@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./main.scss" />
+    <script
+      type="text/javascript"
+      src="../node_modules/@imaginary-maths/surfer-js-core-gpu/vendor/CindyJS/Cindy.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/@imaginary-maths/surfer-js-core-gpu/vendor/CindyJS/CindyGL.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../node_modules/@imaginary-maths/surfer-js-core-gpu/vendor/CindyJS/symbolic.js"
+    ></script>
+  </head>
+
+  <body style="font-family: Arial">
+    <div id="surfer-container-width-sliders">
+      <span id="surfer-container"></span>
+      <span id="sliders"></span>
+      <div id="formula-wrapper">
+        <form id="formula-form" submit=".">
+          <textarea id="formula">
+(x^2+y^2+z^2-(0.5+a)^2)^2-(3*((0.5+a)^2)-1)/(3-((0.5+a)^2))*(1-z-sqrt(2)*x)*(1-z+sqrt(2)*x)*(1+z+sqrt(2)*y)*(1+z-sqrt(2)*y)</textarea
+          >
+          <button type="submit" id="go"><span>Los!</span></button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>

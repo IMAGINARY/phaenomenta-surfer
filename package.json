@@ -1,0 +1,31 @@
+{
+  "name": "phaenomenta-surfer",
+  "version": "0.1.0",
+  "description": "A web app for rendering algebraic surfaces",
+  "source": "src/index.html",
+  "dependencies": {
+    "@imaginary-maths/surfer-js-core-gpu": "https://github.com/IMAGINARY/surfer-js-core-gpu#c4470d39c68e3c8db471d0b97871f0bb3f488976",
+    "toolcool-range-slider": "^4.0.19"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "2.7.0",
+    "prettier": "^2.8.1",
+    "rimraf": "^4.1.2"
+  },
+  "scripts": {
+    "start": "parcel",
+    "build": "rimraf dist && parcel build --public-url ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IMAGINARY/phaenomenta-surfer.git"
+  },
+  "author": "Christian Stussak <christian.stussak@imaginary.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IMAGINARY/phaenomenta-surfer/issues"
+  },
+  "homepage": "https://github.com/IMAGINARY/phaenomenta-surfer#readme"
+}
