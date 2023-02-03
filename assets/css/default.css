@@ -162,7 +162,7 @@ html, body {
   #redraw-button:hover {
     background-color: #cf005d; }
 
-.embeded .logo-imaginary, .embeded .credits-home, .embeded .icon-info {
+.embeded .logo-imaginary, .embeded .credits-home {
   display: none; }
 
 .embeded .viz-wrapper {
@@ -188,10 +188,6 @@ html, body {
 .embeded #redraw-button {
   font-size: 18px;
   padding: 3px 8px; }
-
-.embeded .modal-dialog {
-  max-width: 560px;
-  margin: 1.25rem auto; }
 
 .logo-imaginary {
   display: block;
@@ -225,53 +221,5 @@ html, body {
     color: #ffffff;
     text-decoration: none;
     opacity: 1; }
-
-.icon-info {
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 100;
-  background-image: url("../img/info-circle-solid.svg");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat; }
-
-.info-formula {
-  display: inline-block;
-  padding: 0.1em 0.3em;
-  background-color: #ddd;
-  font-size: 13px; }
-
-.modal-content {
-  box-shadow: 0 0 30px -6px black;
-  border: none;
-  border-radius: 0; }
-
-.modal-backdrop.show {
-  opacity: 0.2; }
-
-.modal-body {
-  padding: 2rem 5rem;
-  font-family: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal; }
-  .modal-body b, .modal-body strong {
-    font-family: Ubuntu, "Trebuchet MS", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    letter-spacing: normal; }
-  .modal-body a {
-    color: #e80068; }
-  .modal-body button.close {
-    position: absolute;
-    top: 20px;
-    right: 20px; }
-  @media (max-width: 991.98px) {
-    .modal-body {
-      padding: 2rem 1rem; } }
 
 /*# sourceMappingURL=default.css.map */

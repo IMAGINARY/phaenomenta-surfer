@@ -30,25 +30,3 @@
     opacity: 1;
   }
 }
-
-
-.icon-info {
-  display: block;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 100;
-  background-image: url('../img/info-circle-solid.svg');
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.info-formula {
-  display: inline-block;
-  padding: 0.1em 0.3em;
-  background-color: $color-gray;
-  font-size: 13px;
-}
