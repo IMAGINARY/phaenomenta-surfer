@@ -164,6 +164,9 @@ html, body {
   #redraw-button:hover {
     background-color: #ffc2cc; }
 
+body.embeded {
+  overflow: hidden; }
+
 .embeded .logo-imaginary, .embeded .credits-home {
   display: none; }
 

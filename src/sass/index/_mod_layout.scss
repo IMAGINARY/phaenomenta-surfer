@@ -126,6 +126,10 @@ html, body {
   }
 }
 
+body.embeded {
+  overflow: hidden;
+}
+
 .embeded {
   .logo-imaginary, .credits-home {
     display: none;
