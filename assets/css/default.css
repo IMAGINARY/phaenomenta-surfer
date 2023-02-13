@@ -227,4 +227,42 @@ body.embeded {
     text-decoration: none;
     opacity: 1; }
 
+.fa-icon.expand, .fa-icon.compress {
+  width: 2em;
+  height: 2em;
+  vertical-align: -.125em;
+  fill: currentColor; }
+
+#fullscreen-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1001;
+  color: #646363; }
+  #fullscreen-button.expand .compress {
+    display: none; }
+  #fullscreen-button.compress .expand {
+    display: none; }
+
+:fullscreen {
+  background-color: #ffffff; }
+
+:-ms-fullscreen {
+  background-color: #ffffff; }
+
+:-webkit-full-screen {
+  background-color: #ffffff; }
+
+:-moz-full-screen {
+  background-color: #ffffff; }
+
+::backdrop {
+  background-color: #ffffff; }
+
+::-webkit-backdrop {
+  background-color: #ffffff; }
+
+::-ms-backdrop {
+  background-color: #ffffff; }
+
 /*# sourceMappingURL=default.css.map */

@@ -1,0 +1,54 @@
+.fa-icon {
+  &.expand, &.compress {
+    width: 2em;
+    height: 2em;
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+}
+
+#fullscreen-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1001;
+
+  color: $color-phaenomenta-gray;
+
+  &.expand .compress {
+    display:none;
+  }
+
+  &.compress .expand {
+    display:none;
+  }
+}
+
+
+:fullscreen {
+  background-color: $color-phaenomenta-white
+}
+
+:-ms-fullscreen {
+  background-color: $color-phaenomenta-white
+}
+
+:-webkit-full-screen {
+  background-color: $color-phaenomenta-white
+}
+
+:-moz-full-screen {
+  background-color: $color-phaenomenta-white
+}
+
+::backdrop {
+  background-color: $color-phaenomenta-white
+}
+
+::-webkit-backdrop {
+  background-color: $color-phaenomenta-white
+}
+
+::-ms-backdrop {
+  background-color: $color-phaenomenta-white
+}
