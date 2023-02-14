@@ -1,18 +1,17 @@
-# Valentine's day mini website
+# Phaenomenta Surfer
 
-A toy website for Valentine's Day that features the
-[heart shaped algebraic surface](http://mathworld.wolfram.com/HeartSurface.html) (Taubin 1993, 1994).
+A mini-website for rendering real algebraic surfaces in the browser.
 
 Adapted from the ["Raycasting Implicit Surfaces" CindyJS showcase code](https://cindyjs.org/gallery/main/Raytracer/).
 
 ## Credits
 
 Raytracer by Aaron Montag. CindyJS by Jürgen Richter-Gebert.
-Website and adaptations by [Eric Londaits](mailto:eric.londaits@imaginary.org) for IMAGINARY gGmbH.
+Website and adaptations by [Eric Londaits](mailto:eric.londaits@imaginary.org) and [Christian Stussak](mailto:christian.stussak@imaginary.org) for IMAGINARY gGmbH.
 
 ## License
 
-Copyright 2019 IMAGINARY gGmbH
+Copyright 2023 IMAGINARY gGmbH
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
