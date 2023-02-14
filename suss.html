@@ -26,30 +26,6 @@
 
   <script id="csinit" type="text/x-cindyscript">
   framesdelay=1;
-  speciala = .1;
-  smootha(x) := if(x<speciala,
-    (-1/(speciala+.01))*(x-speciala)^2+speciala,
-    (1/(1.01-speciala))*(x-speciala)^2+speciala
-  );
-
-  seta(na) := (
-    a = na;
-    speciala = na;
-    PA.y = (na-.5)*.8;
-  );
-
-  specialb = .5;
-  smoothb(x) := if(x<specialb,
-    (-1/(specialb+.01))*(x-specialb)^2+specialb,
-    (1/(1.01-specialb))*(x-specialb)^2+specialb
-  );
-
-  setb(nb) := (
-    b = nb;
-    specialb = nb;
-    PB.y = (nb-.5)*.8;
-  );
-
 
   setzoom(zoom) := (
     PC.y = (zoom);
@@ -69,9 +45,45 @@
   dragging = false;
   N = 5;
   zoom = 0.1;
-  a = 0.1;
-  b = 0.5;
+  paramA = [];
+  paramA:"min" = 0.0;
+  paramA:"max" = 1.0;
+  paramA:"value" = 0.0;
+  paramA:"name" = "PA";
+  paramA:"yMin" = -0.4;
+  paramA:"yMax" = 0.4;
+  paramA:"x" = 0.55;
+
+  paramB = [];
+  paramB:"min" = 0.0;
+  paramB:"max" = 1.0;
+  paramB:"value" = 0.0;
+  paramB:"name" = "PB";
+  paramB:"yMin" = -0.4;
+  paramB:"yMax" = 0.4;
+  paramB:"x" = 0.60;
+
   alpha = .7;
+
+  clamp(t, min, max) := if (t > max, max, if (t < min, min, t));
+  mapLinear(t, tMin, tMax, outMin, outMax) := outMin + (outMax - outMin) * (t - tMin) / (tMax - tMin);
+
+  updateSliderFromParam(param) := (
+    regional(P);
+    P = element(param:"name");
+    P.x = param:"x";
+    P.y = mapLinear(param:"value", param:"min", param:"max", param:"yMin", param:"yMax");
+    P.y = clamp(P.y, param:"yMin", param:"yMax");
+    param;
+  );
+
+  updateParamFromSlider(param) := (
+    regional(P);
+    P = element(param:"name");
+    param:"value" = mapLinear(P.y, param:"yMin", param:"yMax", param:"min", param:"max");
+    param:"value" = clamp(param:"value", param:"min", param:"max");
+    param;
+  );
 
   //we stand at position mat*(0, 0, -2.2) and watch to (0,0,0).
   //ray(pixel, t) is the point in R^3 that lies at position t the ray behind the pixel at location pixel(vec2)
@@ -83,8 +95,10 @@
 
   //fun is the user defined trivariate polynomial
   fun(x, y, z) := x^2+y^2+z^2+10*b*x*y*z-2*a;
-  seta(0.5);
-  setb(0.2);
+  paramA:"value" = 0.5;
+  updateSliderFromParam(paramA);
+  paramB:"value" = 0.2;
+  updateSliderFromParam(paramB);
   setzoom(-0.125);
 
   //F takes vec3 instead of 3 variables
@@ -259,17 +273,14 @@
       (sin(dx), 0, cos(dx))
   );
 
-
   //the 3 sliders at the left.
-  PA.x = 0.55;
-  if (PA.y > .4, PA.y = .4);
-  if (PA.y < -.4, PA.y = -.4);
-  a = smootha((.5 + PA.y/.8));
+  paramA = updateParamFromSlider(paramA);
+  paramA = updateSliderFromParam(paramA);
+  paramB = updateParamFromSlider(paramB);
+  paramB = updateSliderFromParam(paramB);
 
-  PB.x = 0.6;
-  if (PB.y > .4, PB.y = .4);
-  if (PB.y < -.4, PB.y = -.4);
-  b = smoothb((.5 + PB.y/.8));
+  a = paramA:"value";
+  b = paramB:"value";
 
   PC.x = 0.65;
   if (PC.y > .4, PC.y = .4);
