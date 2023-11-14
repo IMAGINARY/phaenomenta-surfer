@@ -63,7 +63,7 @@
   paramB:"yMax" = 0.4;
   paramB:"x" = 0.60;
 
-  alpha = .7;
+  alpha = 1.0;
 
   clamp(t, min, max) := if (t > max, max, if (t < min, min, t));
   mapLinear(t, tMin, tMax, outMin, outMax) := outMin + (outMax - outMin) * (t - tMin) / (tMax - tMin);
